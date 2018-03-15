@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冒泡排序</title>
+</head>
+<body>
+<script>
+    function bubbing(array){
+        var Msmall;
+        for (var i=0;i<array.length;i++){
+            for (var j=0;j<array.length-i-1;j++){
+                if(array[j]>array[j+1]){
+                    Msmall=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=Msmall;
+                }
+            }
+        }
+        return array;
+    }
+    var arrayA=[2,3,1,5,6];
+    var s=bubbing(arrayA);
+    console.log(s);
+</script>
+</body>
+</html>
